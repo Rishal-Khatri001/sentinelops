@@ -118,5 +118,3 @@ This project demonstrates how security analytics pipelines can be combined with 
 ## 👤 Author
 
 **Rishal Khatri** *Computer Science (Cybersecurity)* **University of New Hampshire '26**
-
-```
