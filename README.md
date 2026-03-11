@@ -84,6 +84,39 @@ graph TD
 git clone [https://github.com/YOUR_USERNAME/sentinelops.git](https://github.com/YOUR_USERNAME/sentinelops.git)
 cd sentinelops
 pip install -r requirements.txt
+```
+### 2. Setup Local AI Models
+Install [Ollama](https://ollama.com/) and pull the required models for the RAG pipeline:
 
+```bash
+ollama pull llama3.1:8b
+ollama pull embeddinggemma
+```
+3. Initialize & Run
+```bash
+# Build the Vector Knowledge Base from security playbooks
+python utils/build_rag_store.py
 
+# Launch the interactive SOC Dashboard
+streamlit run app/dashboard.py
+```
+📖 Example Output
+Input Alert: Impossible Travel detected for rkhatri@company.com
 
+AI Investigation Summary:
+
+"The alert indicates a potential impossible travel event. The user logged in from Durham, US and then Berlin, DE within three minutes using a new device. False positive analysis found no VPN evidence, increasing the likelihood of credential misuse. Recommended Action: Escalate alert and revoke active sessions."
+
+🛡️ Project Purpose
+This project demonstrates how security analytics pipelines can be combined with local AI models to assist analysts during identity-based alert investigations. Key focus areas include:
+
+Authentication Anomaly Detection: Identifying geographic and temporal outliers in login behavior.
+
+Alert Triage Automation: Reducing analyst fatigue by reconstructing event context automatically.
+
+Explainable AI (XAI): Providing clear, natural language reasoning for risk scores and response recommendations.
+
+👤 Author
+Rishal Khatri Computer Science (Cybersecurity & AI/ML)
+
+University of New Hampshire '26
