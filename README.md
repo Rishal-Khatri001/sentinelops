@@ -1,3 +1,4 @@
+```markdown
 # SentinelOps: AI-Assisted Security Investigation Toolkit
 
 **SentinelOps** is a modular security investigation platform designed to simulate and automate SOC analysis for identity-based threats. By combining rule-based analytics with a **Local Retrieval-Augmented Generation (RAG)** pipeline, it transforms raw authentication telemetry into actionable, analyst-grade investigation summaries.
@@ -37,6 +38,8 @@ graph TD
     C --> E[Timeline Builder]
     D & E --> F[Local RAG Assistant]
     F --> G[Streamlit SOC Dashboard]
+
+```
 
 ---
 
@@ -114,8 +117,6 @@ This project demonstrates how security analytics pipelines can be combined with 
 
 ## 👤 Author
 
-**Rishal Khatri** *Computer Science (Cybersecurity & AI/ML)* **University of New Hampshire '26**
-
-```
+**Rishal Khatri** *Computer Science (Cybersecurity)* **University of New Hampshire '26**
 
 ```
