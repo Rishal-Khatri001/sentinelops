@@ -41,7 +41,7 @@ graph TD
     D & E --> F[Local RAG Assistant]
     F --> G[Streamlit SOC Dashboard]
 
-,,,
+,,,mermaid
 
 ## 🛠️ Tech Stack
 
