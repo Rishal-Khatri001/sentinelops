@@ -96,16 +96,15 @@ The system uses:
 - ChromaDB for vector search
 - security playbooks as the knowledge base
 
-Workflow:
 Alert
-↓
-Investigation modules
-↓
-Structured investigation context
-↓
-Vector retrieval from security playbooks
-↓
-Local LLM explanation
+  ↓
+Investigation Modules
+  ↓
+Structured Investigation Context
+  ↓
+Vector Retrieval from Security Playbooks
+  ↓
+Local LLM Explanation
 
 Example AI output:
 
