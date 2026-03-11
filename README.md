@@ -32,15 +32,14 @@ A privacy-first local AI component that generates natural language investigation
 ## 🏗️ Architecture & Workflow
 
 
-'''mermaid
 graph TD
     A[Security Logs] --> B[Log Normalization]
     B --> C{Investigation Engine}
     C --> D[Risk Scoring]
     C --> E[Timeline Builder]
-    D & E --> F[Local RAG Assistant]
+    D --> F[Local RAG Assistant]
+    E --> F
     F --> G[Streamlit SOC Dashboard]
-
 
 
 ## 🛠️ Tech Stack
