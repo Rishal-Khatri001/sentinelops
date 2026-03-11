@@ -41,3 +41,28 @@ graph TD
     C --> E[Timeline Builder]
     D & E --> F[Local RAG Assistant]
     F --> G[Streamlit SOC Dashboard]
+
+## 🛠️ Tech Stack
+
+* **Language:** Python 3.11+
+* **Frontend:** Streamlit (Interactive SOC Dashboard)
+* **Data Science:** Pandas, NumPy
+* **AI/ML:** Ollama (Llama 3.1 8B), ChromaDB (Vector DB)
+* **Infrastructure:** Local Retrieval-Augmented Generation (RAG)
+
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+* [Ollama](https://ollama.com/) installed and running.
+* Python 3.9+
+
+### 1. Installation
+```bash
+git clone [https://github.com/YOUR_USERNAME/sentinelops.git](https://github.com/YOUR_USERNAME/sentinelops.git)
+cd sentinelops
+pip install -r requirements.txt
+
+
+
