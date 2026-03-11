@@ -97,13 +97,17 @@ The system uses:
 - security playbooks as the knowledge base
 
 Alert
-  ↓
+│
+▼
 Investigation Modules
-  ↓
+│
+▼
 Structured Investigation Context
-  ↓
-Vector Retrieval from Security Playbooks
-  ↓
+│
+▼
+Vector Retrieval (Security Playbooks)
+│
+▼
 Local LLM Explanation
 
 Example AI output:
