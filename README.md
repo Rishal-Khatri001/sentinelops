@@ -32,8 +32,7 @@ A privacy-first local AI component that generates natural language investigation
 ## 🏗️ Architecture & Workflow
 
 
-
-```mermaid
+'''mermaid
 graph TD
     A[Security Logs] --> B[Log Normalization]
     B --> C{Investigation Engine}
