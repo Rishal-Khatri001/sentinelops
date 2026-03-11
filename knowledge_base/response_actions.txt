@@ -1,0 +1,23 @@
+Response recommendations in SentinelOps should be based on the overall risk profile and the false positive likelihood.
+
+When the alert has high risk and low false positive evidence, appropriate actions include:
+- escalate the alert
+- force a password reset
+- revoke active sessions or tokens
+- investigate the new device
+- review surrounding login activity
+
+When the alert has moderate risk or mixed signals, appropriate actions include:
+- investigate further before containment
+- validate whether the user was traveling
+- confirm whether a VPN was in use
+- check device history
+- review nearby authentication events
+
+When the alert has strong benign indicators, appropriate actions include:
+- monitor the account
+- document the benign explanation
+- close the alert as likely benign if confidence is high
+- continue watching for repeated suspicious behavior
+
+Response recommendations should always be grounded in the evidence collected during the investigation. High-risk actions are more appropriate when the alert includes a new device, suspicious IP, cross-border location change, and low false positive confidence.

@@ -1,0 +1,29 @@
+Impossible travel alerts occur when the same user account appears to authenticate from two geographically distant locations within an unrealistic time window.
+
+In SentinelOps, an impossible travel alert is treated as higher risk when the following conditions are present:
+- the second login occurs only a few minutes after the first login
+- the location changes across countries or very distant regions
+- the second login uses a new device
+- the second login comes from a suspicious IP address
+- there is no VPN indicator present
+
+These conditions may suggest account compromise, credential theft, session misuse, or unauthorized access.
+
+Common investigation questions:
+- Did the user recently travel?
+- Was a VPN in use?
+- Is the second device known or previously trusted?
+- Is the second IP associated with suspicious activity?
+- Are there additional failed logins or unusual events around the alert?
+
+A lower-confidence impossible travel alert may occur when:
+- the second login used a known corporate VPN
+- the second login used the same known device
+- the browser and operating system match prior successful logins
+- the location change can be explained by network routing behavior
+
+A higher-confidence impossible travel alert should be escalated when:
+- the second login uses a new device
+- the location change is cross-border
+- the IP appears suspicious
+- there are no strong benign indicators

@@ -1,0 +1,21 @@
+Device context is important during identity investigations because a new or previously unseen device can increase the likelihood that an alert is malicious.
+
+In SentinelOps, device risk is higher when:
+- the current login uses a different device_id than the prior successful login
+- the device appears for the first time for that user
+- the login also involves a suspicious IP or unusual location
+- the alert occurs within a short time window after a prior login
+
+A known device lowers suspicion, especially when combined with:
+- matching operating system
+- matching browser
+- known location or expected user behavior
+- VPN usage that explains location differences
+
+A new device does not always mean compromise, but it should raise analyst attention when paired with:
+- cross-border logins
+- suspicious IP address ranges
+- repeated failed logins before success
+- missing or weak false positive indicators
+
+When SentinelOps detects a new device in an impossible travel scenario, the device risk score should increase and the investigation should consider containment actions if other high-risk indicators are present.

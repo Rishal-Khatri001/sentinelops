@@ -1,0 +1,26 @@
+VPN activity can create false positive signals in identity-based alerts, especially impossible travel alerts.
+
+A login may appear to come from a different city or country when the user is actually connected through a VPN exit node. This can make a normal login sequence look suspicious even when the user is legitimate.
+
+In SentinelOps, VPN usage should reduce confidence in an alert when:
+- the vpn_flag is true
+- the device matches a previously known device
+- the browser matches prior login behavior
+- the operating system matches prior login behavior
+- the application is something like a VPN portal or remote access workflow
+
+VPN-related alerts still require review, but they should not automatically be treated as compromise.
+
+Signs that an impossible travel alert may be VPN-related:
+- same user
+- same device
+- same browser
+- same operating system
+- short time difference caused by a VPN exit node
+- no additional suspicious activity in nearby events
+
+Signs that the alert is less likely to be a false positive:
+- no VPN indicator is present
+- the login uses a new device
+- the IP address appears suspicious
+- the location change is extreme and unsupported by prior behavior

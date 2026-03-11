@@ -12,6 +12,7 @@ from modules.false_positive_checker import score_false_positive
 from modules.timeline_builder import build_timeline
 from modules.risk_profiler import calculate_risk
 from modules.response_engine import generate_response_recommendation
+from modules.ai_explainer import build_investigation_context, retrieve_context, generate_ai_summary
 
 
 st.set_page_config(page_title="SentinelOps", layout="wide")
@@ -65,3 +66,20 @@ if st.button("Run Investigation"):
 
     response = generate_response_recommendation(selected_alert, logs)
     st.json(response)
+
+    st.header("AI Investigation Summary")
+
+    context = build_investigation_context(selected_alert, logs)
+    query_text = (
+        f"{selected_alert['alert_type']} for user {selected_alert['user']} "
+        f"with trigger reason: {selected_alert['trigger_reason']}"
+    )
+    retrieved_docs = retrieve_context(query_text)
+    ai_summary = generate_ai_summary(context, retrieved_docs)
+
+    st.write(ai_summary)
+
+    with st.expander("Retrieved Knowledge Base Context"):
+        for i, doc in enumerate(retrieved_docs, start=1):
+            st.markdown(f"**Context {i}**")
+            st.write(doc)
