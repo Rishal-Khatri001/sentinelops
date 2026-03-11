@@ -34,12 +34,31 @@ A privacy-first local AI component that generates natural language investigation
 
 graph TD
     A[Security Logs] --> B[Log Normalization]
+
     B --> C{Investigation Engine}
-    C --> D[Risk Scoring]
-    C --> E[Timeline Builder]
-    D --> F[Local RAG Assistant]
-    E --> F
-    F --> G[Streamlit SOC Dashboard]
+
+    C --> D[Alert Explainer]
+    C --> E[False Positive Checker]
+    C --> F[Timeline Builder]
+    C --> G[Entity Risk Profiler]
+    C --> H[Response Recommendation Engine]
+
+    D --> I[Investigation Context]
+    E --> I
+    F --> I
+    G --> I
+    H --> I
+
+    I --> J[Local RAG Assistant]
+
+    J --> K[Vector Retrieval<br>Security Playbooks]
+    K --> J
+
+    J --> L[Local LLM<br>Llama 3.1 via Ollama]
+
+    L --> M[AI Investigation Summary]
+
+    M --> N[Streamlit SOC Dashboard]
 
 
 ## 🛠️ Tech Stack
