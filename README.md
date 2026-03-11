@@ -32,6 +32,7 @@ A privacy-first local AI component that generates natural language investigation
 ## 🏗️ Architecture & Workflow
 
 
+```mermaid
 graph TD
     A[Security Logs] --> B[Log Normalization]
 
@@ -59,6 +60,7 @@ graph TD
     L --> M[AI Investigation Summary]
 
     M --> N[Streamlit SOC Dashboard]
+```
 
 
 ## 🛠️ Tech Stack
