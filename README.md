@@ -1,28 +1,26 @@
 # SentinelOps: AI-Assisted Security Investigation Toolkit
 
-**SentinelOps** is a modular security investigation platform that simulates how a Security Operations Center (SOC) analyzes identity-based alerts. 
-
-The system processes authentication telemetry, reconstructs investigation context, evaluates risk signals, and utilizes a **local Retrieval-Augmented Generation (RAG)** pipeline to generate professional, analyst-grade investigation summaries. This project demonstrates the synergy between rule-based security analytics and local AI models in high-stakes alert triage.
+**SentinelOps** is a modular security investigation platform that simulates how a Security Operations Center (SOC) analyzes identity-based alerts. By combining rule-based analytics with a **Local Retrieval-Augmented Generation (RAG)** pipeline, it transforms raw authentication telemetry into actionable, analyst-grade investigation summaries.
 
 ---
 
 ## 🚀 Key Features
 
 ### 🛡️ Authentication Telemetry Pipeline
-Ingests and normalizes logs to provide a unified foundation for analysis, including:
+Normalizes disparate logs into a unified schema, tracking:
 * **Identity:** User, Application, MFA Status.
 * **Context:** IP Address, Geo-location, ASN/ISP.
 * **Environment:** Device ID, Browser Fingerprint, VPN Indicators.
 
 ### 🔍 Alert Investigation Engine
-Modular components that analyze alerts step-by-step:
-* **Alert Explainer:** Contextualizes triggers like *Impossible Travel* or anomalous login timing.
-* **False Positive Checker:** Evaluates benign indicators (known devices, VPN usage) to produce a confidence score.
-* **Timeline Builder:** Reconstructs the sequence of events surrounding an alert for full context.
-* **Entity Risk Profiler:** Calculates real-time risk scores for Users, Devices, and IP addresses.
+Modular components that perform automated "pre-triage":
+* **Alert Explainer:** Contextualizes triggers like *Impossible Travel* or anomalous timing.
+* **False Positive Checker:** Cross-references known devices and VPN exit nodes to generate a confidence score.
+* **Timeline Builder:** Reconstructs the sequence of events surrounding an alert.
+* **Entity Risk Profiler:** Aggregates real-time risk scores for Users, IPs, and Devices.
 
 ### 🤖 AI Investigation Assistant (Local RAG)
-A privacy-first local AI component that generates natural language investigation summaries using:
+A privacy-first local AI component that interprets alerts using:
 * **Inference:** Ollama (Llama 3.1 8B).
 * **Vector Store:** ChromaDB.
 * **Knowledge Base:** Security playbooks and incident response frameworks.
@@ -39,7 +37,6 @@ graph TD
     C --> E[Timeline Builder]
     D & E --> F[Local RAG Assistant]
     F --> G[Streamlit SOC Dashboard]
-
 ---
 
 ## 🛠️ Tech Stack
