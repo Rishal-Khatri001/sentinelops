@@ -1,0 +1,356 @@
+timestamp,user,ip_address,location,device_id,device_type,operating_system,browser,application,event_type,result,mfa_status,vpn_flag
+2026-03-01 08:04:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-01 08:05:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-01 08:26:00,bjohnson@company.com,18.207.44.91,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-01 08:29:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-01 09:16:00,jdoe@company.com,3.91.201.18,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-01 09:23:00,rkhatri@company.com,44.201.19.10,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-01 09:26:00,rkhatri@company.com,103.154.232.8,"Berlin, DE",device_716,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-01 09:40:00,jdoe@company.com,3.91.201.18,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-01 09:43:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-01 09:44:00,jdoe@company.com,3.91.201.18,"Dallas, US",device_101,laptop,Windows,Chrome,VPNPortal,login,success,passed,true
+2026-03-01 11:24:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-01 11:25:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-01 11:37:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-01 11:38:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-01 11:57:00,bjohnson@company.com,3.91.201.18,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-01 11:58:00,bjohnson@company.com,3.91.201.18,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-01 12:27:00,rkhatri@company.com,185.220.101.1,"Tokyo, JP",device_689,laptop,Windows,Chrome,AzurePortal,login,failure,failed,false
+2026-03-01 12:28:00,rkhatri@company.com,185.220.101.1,"London, UK",device_472,laptop,Windows,Chrome,AzurePortal,login,failure,failed,false
+2026-03-01 12:29:00,rkhatri@company.com,185.220.101.1,"Moscow, RU",device_670,laptop,Windows,Chrome,AzurePortal,login,failure,failed,false
+2026-03-01 12:31:00,rkhatri@company.com,185.220.101.1,"Moscow, RU",device_835,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-01 13:00:00,mlee@company.com,91.214.124.22,"Berlin, DE",device_722,laptop,Windows,Chrome,VPNPortal,login,failure,failed,false
+2026-03-01 13:01:00,mlee@company.com,91.214.124.22,"Tokyo, JP",device_731,laptop,Windows,Chrome,VPNPortal,login,failure,failed,false
+2026-03-01 13:02:00,mlee@company.com,91.214.124.22,"Berlin, DE",device_813,laptop,Windows,Chrome,VPNPortal,login,failure,failed,false
+2026-03-01 13:04:00,mlee@company.com,91.214.124.22,"Berlin, DE",device_955,laptop,Windows,Chrome,VPNPortal,login,success,passed,false
+2026-03-01 13:13:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-01 13:14:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-01 15:26:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-01 15:30:00,jdoe@company.com,3.91.201.18,"Amsterdam, NL",device_101,laptop,Windows,Chrome,VPNPortal,login,success,passed,true
+2026-03-01 16:19:00,mlee@company.com,18.207.44.91,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-01 16:20:00,mlee@company.com,18.207.44.91,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-01 17:41:00,jdoe@company.com,52.14.22.11,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-01 17:42:00,jdoe@company.com,52.14.22.11,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-01 18:22:00,asmith@company.com,34.226.10.55,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-01 18:45:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-01 19:00:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-01 19:01:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-01 19:11:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-01 19:52:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-01 19:53:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-01 20:36:00,jdoe@company.com,3.91.201.18,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-01 20:47:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-01 20:48:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-01 20:52:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-01 21:12:00,bjohnson@company.com,18.207.44.91,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-01 21:32:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-01 21:35:00,jdoe@company.com,18.207.44.91,"Amsterdam, NL",device_101,laptop,Windows,Chrome,VPNPortal,login,success,passed,true
+2026-03-01 21:39:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-01 21:40:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-01 21:54:00,asmith@company.com,18.207.44.91,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-01 23:13:00,rkhatri@company.com,18.207.44.91,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-01 23:14:00,rkhatri@company.com,18.207.44.91,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-01 23:16:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-01 23:47:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 00:19:00,rkhatri@company.com,44.201.19.10,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 00:22:00,rkhatri@company.com,103.154.232.8,"Moscow, RU",device_795,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 01:02:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 01:03:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-02 01:14:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 01:22:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 01:23:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-02 01:52:00,bjohnson@company.com,18.207.44.91,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 01:53:00,bjohnson@company.com,18.207.44.91,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 01:53:00,mlee@company.com,91.214.124.22,"London, UK",device_896,laptop,Windows,Chrome,VPNPortal,login,failure,failed,false
+2026-03-02 01:54:00,mlee@company.com,91.214.124.22,"Berlin, DE",device_429,laptop,Windows,Chrome,VPNPortal,login,failure,failed,false
+2026-03-02 01:55:00,mlee@company.com,91.214.124.22,"Moscow, RU",device_562,laptop,Windows,Chrome,VPNPortal,login,failure,failed,false
+2026-03-02 01:57:00,mlee@company.com,91.214.124.22,"Tokyo, JP",device_964,laptop,Windows,Chrome,VPNPortal,login,success,passed,false
+2026-03-02 03:30:00,bjohnson@company.com,18.207.44.91,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 03:31:00,bjohnson@company.com,18.207.44.91,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 04:07:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 04:08:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 04:08:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 04:22:00,asmith@company.com,44.201.19.10,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 04:26:00,asmith@company.com,52.14.22.11,"Ashburn, US",device_102,laptop,MacOS,Safari,VPNPortal,login,success,passed,true
+2026-03-02 05:13:00,mlee@company.com,18.207.44.91,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 05:14:00,mlee@company.com,18.207.44.91,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-02 05:26:00,jdoe@company.com,185.220.101.1,"Moscow, RU",device_965,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-02 05:27:00,jdoe@company.com,185.220.101.1,"Berlin, DE",device_560,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-02 05:28:00,jdoe@company.com,185.220.101.1,"Berlin, DE",device_818,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-02 05:29:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 05:30:00,jdoe@company.com,185.220.101.1,"London, UK",device_881,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-02 06:03:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 06:04:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-02 06:12:00,rkhatri@company.com,18.207.44.91,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 06:13:00,rkhatri@company.com,18.207.44.91,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-02 06:42:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 06:43:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 06:54:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 08:22:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 08:29:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 08:33:00,rkhatri@company.com,185.220.101.1,"Berlin, DE",device_580,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 08:48:00,bjohnson@company.com,52.14.22.11,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 08:49:00,bjohnson@company.com,52.14.22.11,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 09:10:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 09:12:00,rkhatri@company.com,52.14.22.11,"Dallas, US",device_103,laptop,Windows,Chrome,VPNPortal,login,success,passed,true
+2026-03-02 10:32:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 10:33:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-02 11:14:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 11:15:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 12:48:00,jdoe@company.com,34.226.10.55,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-02 12:53:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 12:54:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-02 12:55:00,bjohnson@company.com,34.226.10.55,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 12:57:00,bjohnson@company.com,18.207.44.91,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 13:01:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 13:01:00,bjohnson@company.com,91.214.124.22,"Tokyo, JP",device_910,laptop,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 13:02:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-02 13:23:00,asmith@company.com,18.207.44.91,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 13:24:00,asmith@company.com,18.207.44.91,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 13:43:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 13:44:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-02 13:45:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 14:15:00,rkhatri@company.com,18.207.44.91,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 14:20:00,rkhatri@company.com,103.154.232.8,"Moscow, RU",device_895,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 14:26:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 14:40:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 14:41:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 16:00:00,rkhatri@company.com,18.207.44.91,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 16:01:00,rkhatri@company.com,18.207.44.91,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-02 16:41:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 16:42:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-02 16:48:00,bjohnson@company.com,3.91.201.18,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 16:53:00,bjohnson@company.com,185.220.101.1,"London, UK",device_395,laptop,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 17:21:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-02 17:22:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-02 17:36:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 17:37:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-02 18:19:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 18:46:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 20:06:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 20:06:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 20:11:00,asmith@company.com,34.226.10.55,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 20:12:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 20:25:00,asmith@company.com,44.201.19.10,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 20:51:00,bjohnson@company.com,34.226.10.55,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 20:52:00,bjohnson@company.com,34.226.10.55,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 20:52:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 20:57:00,mlee@company.com,103.154.232.8,"London, UK",device_906,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-02 20:59:00,bjohnson@company.com,44.201.19.10,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 21:03:00,bjohnson@company.com,185.220.101.1,"Tokyo, JP",device_497,laptop,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 21:29:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 21:30:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 21:57:00,bjohnson@company.com,3.91.201.18,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 21:59:00,bjohnson@company.com,3.91.201.18,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-02 22:00:00,bjohnson@company.com,3.91.201.18,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 22:01:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 22:01:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-02 22:02:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 22:02:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-02 23:10:00,rkhatri@company.com,44.201.19.10,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-02 23:11:00,rkhatri@company.com,44.201.19.10,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-03 00:35:00,bjohnson@company.com,34.226.10.55,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-03 00:40:00,bjohnson@company.com,34.226.10.55,"Dallas, US",device_104,mobile,iOS,Safari,VPNPortal,login,success,passed,true
+2026-03-03 00:52:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-03 02:05:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 04:00:00,rkhatri@company.com,18.207.44.91,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-03 04:00:00,bjohnson@company.com,103.154.232.8,"Tokyo, JP",device_426,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-03 04:01:00,bjohnson@company.com,103.154.232.8,"Berlin, DE",device_634,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-03 04:02:00,bjohnson@company.com,103.154.232.8,"Berlin, DE",device_675,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-03 04:03:00,rkhatri@company.com,91.214.124.22,"Berlin, DE",device_549,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-03 04:04:00,bjohnson@company.com,103.154.232.8,"Berlin, DE",device_579,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 04:32:00,bjohnson@company.com,3.91.201.18,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-03 04:49:00,bjohnson@company.com,18.207.44.91,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-03 05:12:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-03 05:13:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-03 05:45:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-03 07:46:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 07:56:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-03 07:57:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-03 08:01:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 08:17:00,jdoe@company.com,34.226.10.55,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 08:51:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 09:43:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-03 09:44:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-03 11:03:00,asmith@company.com,44.201.19.10,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-03 11:04:00,asmith@company.com,44.201.19.10,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-03 11:44:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-03 11:44:00,bjohnson@company.com,3.91.201.18,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-03 11:48:00,bjohnson@company.com,91.214.124.22,"Berlin, DE",device_486,laptop,iOS,Safari,Office365,login,success,passed,false
+2026-03-03 12:06:00,bjohnson@company.com,34.226.10.55,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-03 12:13:00,jdoe@company.com,52.14.22.11,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 13:10:00,bjohnson@company.com,34.226.10.55,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-03 14:42:00,jdoe@company.com,34.226.10.55,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 14:47:00,jdoe@company.com,52.14.22.11,"Ashburn, US",device_101,laptop,Windows,Chrome,VPNPortal,login,success,passed,true
+2026-03-03 15:26:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-03 15:45:00,rkhatri@company.com,91.214.124.22,"Tokyo, JP",device_507,laptop,Windows,Chrome,AzurePortal,login,failure,failed,false
+2026-03-03 15:46:00,rkhatri@company.com,91.214.124.22,"Moscow, RU",device_737,laptop,Windows,Chrome,AzurePortal,login,failure,failed,false
+2026-03-03 15:47:00,rkhatri@company.com,91.214.124.22,"London, UK",device_907,laptop,Windows,Chrome,AzurePortal,login,failure,failed,false
+2026-03-03 15:49:00,rkhatri@company.com,91.214.124.22,"Tokyo, JP",device_810,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-03 16:17:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-03 16:18:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-03 16:25:00,bjohnson@company.com,185.220.101.1,"Moscow, RU",device_930,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-03 16:26:00,bjohnson@company.com,185.220.101.1,"Tokyo, JP",device_910,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-03 16:27:00,bjohnson@company.com,185.220.101.1,"London, UK",device_452,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-03 16:29:00,bjohnson@company.com,185.220.101.1,"Moscow, RU",device_673,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 16:38:00,jdoe@company.com,3.91.201.18,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 16:39:00,jdoe@company.com,3.91.201.18,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-03 16:46:00,bjohnson@company.com,52.14.22.11,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-03 16:47:00,bjohnson@company.com,52.14.22.11,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-03 16:49:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-03 16:52:00,mlee@company.com,3.91.201.18,"Amsterdam, NL",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,true
+2026-03-03 17:16:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-03 17:17:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-03 17:49:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-03 17:50:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-03 19:11:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 19:48:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-03 19:49:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-03 19:57:00,rkhatri@company.com,185.220.101.1,"London, UK",device_711,laptop,Windows,Chrome,AzurePortal,login,failure,failed,false
+2026-03-03 19:58:00,rkhatri@company.com,185.220.101.1,"London, UK",device_678,laptop,Windows,Chrome,AzurePortal,login,failure,failed,false
+2026-03-03 19:59:00,rkhatri@company.com,185.220.101.1,"London, UK",device_848,laptop,Windows,Chrome,AzurePortal,login,failure,failed,false
+2026-03-03 20:01:00,rkhatri@company.com,185.220.101.1,"Berlin, DE",device_440,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-03 20:30:00,jdoe@company.com,34.226.10.55,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 20:31:00,jdoe@company.com,34.226.10.55,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-03 20:52:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-03 21:26:00,bjohnson@company.com,18.207.44.91,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-03 22:19:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-03 23:25:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-03 23:26:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-04 00:12:00,jdoe@company.com,52.14.22.11,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-04 00:36:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-04 00:40:00,rkhatri@company.com,91.214.124.22,"London, UK",device_660,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-04 01:05:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-04 02:39:00,asmith@company.com,44.201.19.10,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-04 02:40:00,asmith@company.com,44.201.19.10,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-04 05:00:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-04 05:01:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-04 05:18:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-04 05:34:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-04 05:35:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-04 06:51:00,bjohnson@company.com,103.154.232.8,"London, UK",device_684,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-04 06:52:00,bjohnson@company.com,103.154.232.8,"Moscow, RU",device_999,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-04 06:53:00,bjohnson@company.com,103.154.232.8,"London, UK",device_903,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-04 06:55:00,bjohnson@company.com,103.154.232.8,"Berlin, DE",device_881,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-04 06:59:00,jdoe@company.com,34.226.10.55,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-04 07:22:00,mlee@company.com,18.207.44.91,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-04 07:37:00,rkhatri@company.com,44.201.19.10,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-04 07:41:00,rkhatri@company.com,91.214.124.22,"Berlin, DE",device_532,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-04 08:55:00,asmith@company.com,44.201.19.10,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-04 08:56:00,asmith@company.com,44.201.19.10,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-04 09:13:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-04 09:14:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-04 09:29:00,bjohnson@company.com,34.226.10.55,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-04 09:35:00,mlee@company.com,18.207.44.91,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-04 10:21:00,jdoe@company.com,185.220.101.1,"Moscow, RU",device_672,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-04 10:22:00,jdoe@company.com,185.220.101.1,"Moscow, RU",device_473,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-04 10:23:00,jdoe@company.com,185.220.101.1,"Berlin, DE",device_569,laptop,Windows,Chrome,Office365,login,failure,failed,false
+2026-03-04 10:25:00,jdoe@company.com,185.220.101.1,"Tokyo, JP",device_982,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-04 10:29:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-04 11:26:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-04 11:27:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-04 11:37:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-04 11:38:00,mlee@company.com,44.201.19.10,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-04 12:18:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-04 12:19:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-04 12:34:00,bjohnson@company.com,52.14.22.11,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-04 12:35:00,bjohnson@company.com,52.14.22.11,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-04 14:49:00,rkhatri@company.com,44.201.19.10,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-04 15:00:00,jdoe@company.com,52.14.22.11,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-04 15:40:00,bjohnson@company.com,3.91.201.18,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-04 15:41:00,bjohnson@company.com,3.91.201.18,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-04 16:48:00,bjohnson@company.com,34.226.10.55,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-04 18:49:00,mlee@company.com,18.207.44.91,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-04 18:50:00,mlee@company.com,18.207.44.91,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-04 19:27:00,bjohnson@company.com,52.14.22.11,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-04 19:28:00,bjohnson@company.com,52.14.22.11,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-04 19:38:00,bjohnson@company.com,34.226.10.55,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-04 19:39:00,bjohnson@company.com,34.226.10.55,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-04 20:44:00,bjohnson@company.com,44.201.19.10,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-04 20:57:00,asmith@company.com,34.226.10.55,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-04 20:58:00,asmith@company.com,34.226.10.55,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-04 21:04:00,rkhatri@company.com,18.207.44.91,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-04 23:45:00,jdoe@company.com,3.91.201.18,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-04 23:46:00,jdoe@company.com,3.91.201.18,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-05 01:57:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-05 01:58:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-05 02:04:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-05 02:17:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-05 02:19:00,bjohnson@company.com,18.207.44.91,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-05 02:20:00,bjohnson@company.com,18.207.44.91,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-05 02:22:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-05 02:23:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-05 03:26:00,asmith@company.com,18.207.44.91,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-05 03:27:00,asmith@company.com,18.207.44.91,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-05 03:51:00,asmith@company.com,18.207.44.91,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-05 03:52:00,asmith@company.com,18.207.44.91,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-05 03:56:00,jdoe@company.com,52.14.22.11,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-05 03:57:00,jdoe@company.com,52.14.22.11,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-05 04:11:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-05 04:12:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-05 04:14:00,bjohnson@company.com,44.201.19.10,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-05 04:15:00,bjohnson@company.com,44.201.19.10,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-05 04:28:00,bjohnson@company.com,44.201.19.10,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-05 04:28:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-05 04:29:00,mlee@company.com,3.91.201.18,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-05 04:52:00,jdoe@company.com,52.14.22.11,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-05 06:44:00,bjohnson@company.com,44.201.19.10,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-05 07:19:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-05 07:20:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-05 07:49:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-05 08:34:00,bjohnson@company.com,44.201.19.10,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-05 08:35:00,bjohnson@company.com,44.201.19.10,"Chicago, US",device_104,mobile,iOS,Safari,Office365,token_issue,success,passed,false
+2026-03-05 09:20:00,asmith@company.com,18.207.44.91,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-05 09:21:00,asmith@company.com,18.207.44.91,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-05 09:58:00,asmith@company.com,18.207.44.91,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-05 09:59:00,asmith@company.com,18.207.44.91,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-05 10:16:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-05 10:17:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-05 10:45:00,asmith@company.com,34.226.10.55,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-05 10:46:00,asmith@company.com,34.226.10.55,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-05 10:52:00,bjohnson@company.com,44.201.19.10,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-05 11:28:00,rkhatri@company.com,18.207.44.91,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-05 11:29:00,rkhatri@company.com,18.207.44.91,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-05 12:33:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-05 14:31:00,mlee@company.com,18.207.44.91,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-05 14:58:00,jdoe@company.com,52.14.22.11,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-05 15:50:00,jdoe@company.com,34.226.10.55,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-05 16:33:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-05 16:34:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-05 18:11:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-05 18:16:00,jdoe@company.com,3.91.201.18,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-05 18:17:00,jdoe@company.com,3.91.201.18,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-05 18:49:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-05 18:51:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-05 18:52:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-05 19:03:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-05 19:04:00,rkhatri@company.com,3.91.201.18,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-05 19:07:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-05 20:08:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-05 20:09:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,token_issue,success,passed,false
+2026-03-05 21:18:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-05 21:19:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-05 21:54:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-05 21:55:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-05 21:58:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-05 22:11:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-05 22:12:00,mlee@company.com,34.226.10.55,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,token_issue,success,passed,false
+2026-03-05 22:30:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-06 01:14:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-06 01:50:00,bjohnson@company.com,34.226.10.55,"Chicago, US",device_104,mobile,iOS,Safari,Office365,login,success,passed,false
+2026-03-06 02:08:00,mlee@company.com,52.14.22.11,"Seattle, US",device_105,laptop,Windows,Edge,VPNPortal,login,success,passed,false
+2026-03-06 02:34:00,asmith@company.com,52.14.22.11,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-06 02:54:00,rkhatri@company.com,34.226.10.55,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-06 03:04:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,login,success,passed,false
+2026-03-06 03:05:00,rkhatri@company.com,52.14.22.11,"Durham, US",device_103,laptop,Windows,Chrome,AzurePortal,token_issue,success,passed,false
+2026-03-06 04:14:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-06 04:15:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-06 04:46:00,jdoe@company.com,44.201.19.10,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-06 04:58:00,jdoe@company.com,34.226.10.55,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-06 04:59:00,jdoe@company.com,34.226.10.55,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-06 05:22:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-06 05:23:00,jdoe@company.com,18.207.44.91,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-06 05:34:00,jdoe@company.com,52.14.22.11,"Boston, US",device_101,laptop,Windows,Chrome,Office365,login,success,passed,false
+2026-03-06 05:35:00,jdoe@company.com,52.14.22.11,"Boston, US",device_101,laptop,Windows,Chrome,Office365,token_issue,success,passed,false
+2026-03-06 06:02:00,asmith@company.com,44.201.19.10,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false
+2026-03-06 06:03:00,asmith@company.com,3.91.201.18,"New York, US",device_102,laptop,MacOS,Safari,Office365,login,success,passed,false

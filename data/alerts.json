@@ -1,0 +1,142 @@
+[
+  {
+    "alert_id": "A005",
+    "alert_type": "impossible_travel",
+    "user": "rkhatri@company.com",
+    "timestamp": "2026-03-01 09:26:00",
+    "trigger_reason": "Login from Durham, US followed by Berlin, DE within minutes"
+  },
+  {
+    "alert_id": "VPN002",
+    "alert_type": "impossible_travel",
+    "user": "jdoe@company.com",
+    "timestamp": "2026-03-01 09:44:00",
+    "trigger_reason": "Location change from Boston, US to Dallas, US; likely VPN-related"
+  },
+  {
+    "alert_id": "VPN001",
+    "alert_type": "impossible_travel",
+    "user": "jdoe@company.com",
+    "timestamp": "2026-03-01 15:30:00",
+    "trigger_reason": "Location change from Boston, US to Amsterdam, NL; likely VPN-related"
+  },
+  {
+    "alert_id": "VPN008",
+    "alert_type": "impossible_travel",
+    "user": "jdoe@company.com",
+    "timestamp": "2026-03-01 21:35:00",
+    "trigger_reason": "Location change from Boston, US to Amsterdam, NL; likely VPN-related"
+  },
+  {
+    "alert_id": "A010",
+    "alert_type": "impossible_travel",
+    "user": "rkhatri@company.com",
+    "timestamp": "2026-03-02 00:22:00",
+    "trigger_reason": "Login from Durham, US followed by Moscow, RU within minutes"
+  },
+  {
+    "alert_id": "VPN005",
+    "alert_type": "impossible_travel",
+    "user": "asmith@company.com",
+    "timestamp": "2026-03-02 04:26:00",
+    "trigger_reason": "Location change from New York, US to Ashburn, US; likely VPN-related"
+  },
+  {
+    "alert_id": "A012",
+    "alert_type": "impossible_travel",
+    "user": "rkhatri@company.com",
+    "timestamp": "2026-03-02 08:33:00",
+    "trigger_reason": "Login from Durham, US followed by Berlin, DE within minutes"
+  },
+  {
+    "alert_id": "VPN003",
+    "alert_type": "impossible_travel",
+    "user": "rkhatri@company.com",
+    "timestamp": "2026-03-02 09:12:00",
+    "trigger_reason": "Location change from Durham, US to Dallas, US; likely VPN-related"
+  },
+  {
+    "alert_id": "A004",
+    "alert_type": "impossible_travel",
+    "user": "bjohnson@company.com",
+    "timestamp": "2026-03-02 13:01:00",
+    "trigger_reason": "Login from Chicago, US followed by Tokyo, JP within minutes"
+  },
+  {
+    "alert_id": "A007",
+    "alert_type": "impossible_travel",
+    "user": "rkhatri@company.com",
+    "timestamp": "2026-03-02 14:20:00",
+    "trigger_reason": "Login from Durham, US followed by Moscow, RU within minutes"
+  },
+  {
+    "alert_id": "A006",
+    "alert_type": "impossible_travel",
+    "user": "bjohnson@company.com",
+    "timestamp": "2026-03-02 16:53:00",
+    "trigger_reason": "Login from Chicago, US followed by London, UK within minutes"
+  },
+  {
+    "alert_id": "A001",
+    "alert_type": "impossible_travel",
+    "user": "mlee@company.com",
+    "timestamp": "2026-03-02 20:57:00",
+    "trigger_reason": "Login from Seattle, US followed by London, UK within minutes"
+  },
+  {
+    "alert_id": "A009",
+    "alert_type": "impossible_travel",
+    "user": "bjohnson@company.com",
+    "timestamp": "2026-03-02 21:03:00",
+    "trigger_reason": "Login from Chicago, US followed by Tokyo, JP within minutes"
+  },
+  {
+    "alert_id": "VPN007",
+    "alert_type": "impossible_travel",
+    "user": "bjohnson@company.com",
+    "timestamp": "2026-03-03 00:40:00",
+    "trigger_reason": "Location change from Chicago, US to Dallas, US; likely VPN-related"
+  },
+  {
+    "alert_id": "A002",
+    "alert_type": "impossible_travel",
+    "user": "rkhatri@company.com",
+    "timestamp": "2026-03-03 04:03:00",
+    "trigger_reason": "Login from Durham, US followed by Berlin, DE within minutes"
+  },
+  {
+    "alert_id": "A003",
+    "alert_type": "impossible_travel",
+    "user": "bjohnson@company.com",
+    "timestamp": "2026-03-03 11:48:00",
+    "trigger_reason": "Login from Chicago, US followed by Berlin, DE within minutes"
+  },
+  {
+    "alert_id": "VPN004",
+    "alert_type": "impossible_travel",
+    "user": "jdoe@company.com",
+    "timestamp": "2026-03-03 14:47:00",
+    "trigger_reason": "Location change from Boston, US to Ashburn, US; likely VPN-related"
+  },
+  {
+    "alert_id": "VPN006",
+    "alert_type": "impossible_travel",
+    "user": "mlee@company.com",
+    "timestamp": "2026-03-03 16:52:00",
+    "trigger_reason": "Location change from Seattle, US to Amsterdam, NL; likely VPN-related"
+  },
+  {
+    "alert_id": "A008",
+    "alert_type": "impossible_travel",
+    "user": "rkhatri@company.com",
+    "timestamp": "2026-03-04 00:40:00",
+    "trigger_reason": "Login from Durham, US followed by London, UK within minutes"
+  },
+  {
+    "alert_id": "A011",
+    "alert_type": "impossible_travel",
+    "user": "rkhatri@company.com",
+    "timestamp": "2026-03-04 07:41:00",
+    "trigger_reason": "Login from Durham, US followed by Berlin, DE within minutes"
+  }
+]
