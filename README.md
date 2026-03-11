@@ -1,229 +1,124 @@
+```markdown
 # SentinelOps: AI-Assisted Security Investigation Toolkit
 
-SentinelOps is a modular security investigation platform that simulates how a Security Operations Center (SOC) analyzes identity-based alerts.
-
-The system processes authentication telemetry, reconstructs investigation context, evaluates risk signals, and uses a local Retrieval-Augmented Generation (RAG) pipeline to generate analyst-style investigation summaries.
-
-The project demonstrates how rule-based security analytics and local AI models can work together to assist analysts during alert triage.
+**SentinelOps** is a modular security investigation platform designed to simulate and automate SOC analysis for identity-based threats. By combining rule-based analytics with a **Local Retrieval-Augmented Generation (RAG)** pipeline, it transforms raw authentication telemetry into actionable, analyst-grade investigation summaries.
 
 ---
 
-# Key Features
+## 🚀 Key Features
 
-## Authentication Telemetry Pipeline
+### 1. Authentication Telemetry Pipeline
+Normalizes disparate logs into a unified schema, tracking:
+* **Identity:** User, Application, MFA Status.
+* **Context:** IP Address, Geo-location, ASN/ISP.
+* **Environment:** Device ID, Browser Fingerprint, VPN Indicators.
 
-SentinelOps ingests and normalizes authentication logs containing fields such as:
+### 2. Alert Investigation Engine
+Modular components that perform automated "pre-triage":
+* **Alert Explainer:** Contextualizes triggers like *Impossible Travel* or *Anomalous Timing*.
+* **False Positive Checker:** Cross-references known devices and VPN exit nodes to generate a confidence score.
+* **Timeline Builder:** Reconstructs the "blast radius" around an event (e.g., login attempts across multiple regions).
+* **Entity Risk Profiler:** Aggregates risk scores for specific Users, IPs, and Devices.
 
-- user
-- timestamp
-- IP address
-- location
-- device information
-- browser
-- application
-- authentication result
-- MFA status
-- VPN indicator
-
-This normalized telemetry becomes the foundation for alert analysis.
-
----
-
-# Alert Investigation Engine
-
-SentinelOps contains modular investigation components that analyze alerts step-by-step.
-
-## Alert Explainer
-
-Explains why an alert triggered using contextual log data.
-
-Examples include:
-
-- impossible travel detection
-- location change analysis
-- login timing comparison
+### 3. AI Investigation Assistant (Local RAG)
+Unlike cloud-based AI, SentinelOps uses a **privacy-first local pipeline** to interpret alerts:
+* **Inference:** Ollama (Llama 3.1 8B).
+* **Vector Store:** ChromaDB.
+* **Knowledge Base:** Security playbooks and NIST-mapped response procedures.
 
 ---
 
-## False Positive Checker
+## 🏗️ Architecture
 
-Evaluates benign indicators such as:
+```mermaid
+graph TD
+    A[Security Logs] --> B[Log Normalization]
+    B --> C{Investigation Engine}
+    C --> D[Risk Scoring]
+    C --> E[Timeline Builder]
+    D & E --> F[Local RAG Assistant]
+    F --> G[Streamlit SOC Dashboard]
 
-- VPN usage
-- known device
-- same browser or operating system
-- domestic routing anomalies
-
-This module produces a false positive confidence score.
-
----
-
-## Investigation Timeline Builder
-
-Reconstructs events surrounding the alert to provide investigation context.
-
-Example timeline:
-
-09:23 login | Durham US | device_103
-09:26 login | Berlin DE | device_716
-09:43 login | Durham US | device_103
+```
 
 ---
 
-## Entity Risk Profiler
+## 🛠️ Tech Stack
 
-Calculates risk scores for:
-
-- user
-- device
-- IP address
-
-These scores help prioritize investigations.
+* **Language:** Python 3.11+
+* **Frontend:** Streamlit (Interactive SOC Dashboard)
+* **Data Science:** Pandas, NumPy
+* **AI/ML:** Ollama, Llama 3.1, ChromaDB (Vector DB)
 
 ---
 
-## Response Recommendation Engine
+## 💻 Getting Started
 
-Based on the investigation results, SentinelOps recommends response actions such as:
+### Prerequisites
 
-- escalate alert
-- force password reset
-- revoke active sessions
-- investigate new device
-- monitor account activity
+* [Ollama](https://ollama.com/) installed and running.
+* Python 3.9+
 
----
+### Installation
 
-# AI Investigation Assistant (Local RAG)
-
-SentinelOps includes a local AI component that generates analyst-style investigation summaries.
-
-The system uses:
-
-- Ollama for local LLM inference
-- Llama 3.1 for generation
-- ChromaDB for vector search
-- security playbooks as the knowledge base
-
-Workflow:
-
-Alert
-↓
-Investigation modules
-↓
-Structured investigation context
-↓
-Vector retrieval from security playbooks
-↓
-Local LLM explanation
-
-Example AI output:
-
-The alert indicates a potential impossible travel event for user rkhatri@company.com.
-
-The user logged in from Durham, US and then Berlin, DE within three minutes using a different device.
-
-Key indicators include cross-border login behavior, a new device identifier, and a suspicious IP range.
-
-False positive analysis found no VPN evidence, increasing the likelihood of credential misuse.
-
-Recommended action: escalate the alert and contain the account.
-
----
-
-# SentinelOps Architecture
-
-Security Logs
-↓
-Log Normalization
-↓
-Alert Investigation Modules
-↓
-Risk Scoring + Response Recommendation
-↓
-Local RAG AI Investigation Assistant
-↓
-SOC Dashboard (Streamlit)
-
----
-
-# Dashboard
-
-SentinelOps includes a Streamlit dashboard that allows interactive investigations.
-
-The dashboard displays:
-
-- alert details
-- investigation explanation
-- false positive analysis
-- timeline reconstruction
-- entity risk scores
-- response recommendations
-- AI investigation summary
-
----
-
-# Installation
-
-Clone the repository:
-
-git clone https://github.com/YOUR_USERNAME/sentinelops.git
+1. **Clone & Setup**
+```bash
+git clone [https://github.com/YOUR_USERNAME/sentinelops.git](https://github.com/YOUR_USERNAME/sentinelops.git)
 cd sentinelops
-
-Install dependencies:
-
 pip install -r requirements.txt
 
----
+```
 
-# Install Local AI Models
 
-Install Ollama and pull required models:
-
+2. **Download Local Models**
+```bash
 ollama pull llama3.1:8b
-ollama pull embeddinggemma
+ollama pull nomic-embed-text
 
----
+```
 
-# Build the Vector Knowledge Base
 
+3. **Initialize Knowledge Base**
+```bash
 python utils/build_rag_store.py
 
----
+```
 
-# Run the Dashboard
 
+4. **Launch Dashboard**
+```bash
 streamlit run app/dashboard.py
 
----
+```
 
-# Technologies Used
 
-- Python
-- Streamlit
-- Pandas
-- ChromaDB
-- Ollama
-- Llama 3.1
-- Local Retrieval-Augmented Generation (RAG)
 
 ---
 
-# Project Purpose
+## 📖 Example Analysis
 
-This project demonstrates how security analytics pipelines can be combined with local AI models to assist analysts during identity-based alert investigations.
+**Input Alert:** `Impossible Travel detected for rkhatri@company.com`
 
-Focus areas include:
+**AI Summary Output:**
 
-- authentication anomaly detection
-- alert triage automation
-- explainable investigation workflows
-- AI-assisted security analysis
+> "The system detected a login from Durham, US followed by Berlin, DE within 3 minutes. While the device ID matched a known asset, the source IP is a known TOR exit node. Recommended Action: **Immediate Session Revocation.**"
 
 ---
 
-# Author
+## 🛡️ Project Purpose
 
-Rishal Khatri  
-Computer Science (Cybersecurity)  
-University of New Hampshire
+This project demonstrates how security analytics pipelines can be combined with local AI models to assist analysts during identity-based alert investigations. Focus areas include:
+
+* Authentication Anomaly Detection
+* Alert Triage Automation
+* Explainable AI (XAI) Workflows
+
+---
+
+## 👤 Author
+
+**Rishal Khatri** *Computer Science (Cybersecurity & AI/ML)* **University of New Hampshire '26**
+
+```
+
+```
