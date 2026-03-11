@@ -1,219 +1,43 @@
 # SentinelOps: AI-Assisted Security Investigation Toolkit
 
-SentinelOps is a modular security investigation platform that simulates how a Security Operations Center (SOC) analyzes identity-based alerts.
+**SentinelOps** is a modular security investigation platform that simulates how a Security Operations Center (SOC) analyzes identity-based alerts. 
 
-The system processes authentication telemetry, reconstructs investigation context, evaluates risk signals, and uses a local Retrieval-Augmented Generation (RAG) pipeline to generate analyst-style investigation summaries.
-
-The project demonstrates how rule-based security analytics and local AI models can work together to assist analysts during alert triage.
+The system processes authentication telemetry, reconstructs investigation context, evaluates risk signals, and utilizes a **local Retrieval-Augmented Generation (RAG)** pipeline to generate professional, analyst-grade investigation summaries. This project demonstrates the synergy between rule-based security analytics and local AI models in high-stakes alert triage.
 
 ---
 
-## Key Features
+## 🚀 Key Features
 
-### Authentication Telemetry Pipeline
+### 🛡️ Authentication Telemetry Pipeline
+Ingests and normalizes logs to provide a unified foundation for analysis, including:
+* **Identity:** User, Application, MFA Status.
+* **Context:** IP Address, Geo-location, ASN/ISP.
+* **Environment:** Device ID, Browser Fingerprint, VPN Indicators.
 
-SentinelOps ingests and normalizes authentication logs containing fields such as:
+### 🔍 Alert Investigation Engine
+Modular components that perform automated "pre-triage":
+* **Alert Explainer:** Contextualizes triggers like *Impossible Travel* or anomalous login timing.
+* **False Positive Checker:** Evaluates benign indicators (known devices, VPN usage) to produce a confidence score.
+* **Timeline Builder:** Reconstructs the sequence of events surrounding an alert for full context.
+* **Entity Risk Profiler:** Calculates real-time risk scores for Users, Devices, and IP addresses.
 
-- user
-- timestamp
-- IP address
-- location
-- device information
-- browser
-- application
-- authentication result
-- MFA status
-- VPN indicator
-
-This normalized telemetry becomes the foundation for alert analysis.
-
----
-
-## Alert Investigation Engine
-
-SentinelOps contains modular investigation components that analyze alerts step-by-step.
-
-### Alert Explainer
-
-Explains why an alert triggered using contextual log data.
-
-Examples include:
-
-- impossible travel detection
-- location change analysis
-- login timing comparison
-
-### False Positive Checker
-
-Evaluates benign indicators such as:
-
-- VPN usage
-- known device
-- same browser or operating system
-- domestic routing anomalies
-
-This module produces a false positive confidence score.
-
-### Investigation Timeline Builder
-
-Reconstructs events surrounding the alert to provide investigation context.
-
-Example timeline:
-09:23 login | Durham US | device_103
-09:26 login | Berlin DE | device_716
-09:43 login | Durham US | device_103
-
-### Entity Risk Profiler
-
-Calculates risk scores for:
-
-- user
-- device
-- IP address
-
-These scores help prioritize investigations.
-
-### Response Recommendation Engine
-
-Based on the investigation results, SentinelOps recommends response actions such as:
-
-- escalate alert
-- force password reset
-- revoke active sessions
-- investigate new device
-- monitor account activity
+### 🤖 AI Investigation Assistant (Local RAG)
+A privacy-first local AI component that generates natural language investigation summaries using:
+* **Inference:** Ollama (Llama 3.1 8B).
+* **Vector Store:** ChromaDB.
+* **Knowledge Base:** Security playbooks and incident response frameworks.
 
 ---
 
-## AI Investigation Assistant (Local RAG)
+## 🏗️ Architecture & Workflow
 
-SentinelOps includes a local AI component that generates analyst-style investigation summaries.
 
-The system uses:
 
-- Ollama for local LLM inference
-- Llama 3.1 for generation
-- ChromaDB for vector search
-- security playbooks as the knowledge base
-
-Alert
-│
-▼
-Investigation Modules
-│
-▼
-Structured Investigation Context
-│
-▼
-Vector Retrieval (Security Playbooks)
-│
-▼
-Local LLM Explanation
-
-Example AI output:
-
-The alert indicates a potential impossible travel event for user rkhatri@company.com.
-
-The user logged in from Durham, US and then Berlin, DE within three minutes using a different device.
-
-Key indicators include cross-border login behavior, a new device identifier, and a suspicious IP range.
-
-False positive analysis found no VPN evidence, increasing the likelihood of credential misuse.
-
-Recommended action: escalate the alert and contain the account.
-
----
-
-## SentinelOps Architecture
-
-Security Logs
-↓
-Log Normalization
-↓
-Alert Investigation Modules
-↓
-Risk Scoring + Response Recommendation
-↓
-Local RAG AI Investigation Assistant
-↓
-SOC Dashboard (Streamlit)
-
----
-
-## Dashboard
-
-SentinelOps includes a Streamlit dashboard that allows interactive investigations.
-
-The dashboard displays:
-
-- alert details
-- investigation explanation
-- false positive analysis
-- timeline reconstruction
-- entity risk scores
-- response recommendations
-- AI investigation summary
-
----
-
-## Installation
-
-Clone the repository:
-
-git clone https://github.com/YOUR_USERNAME/sentinelops.git
-cd sentinelops
-
-Install dependencies:
-
-pip install -r requirements.txt
-
----
-
-## Install Local AI Models
-
-Install Ollama and pull required models:
-
-ollama pull llama3.1:8b
-ollama pull embeddinggemma
----
-
-## Build the Vector Knowledge Base
-
-python utils/build_rag_store.py
----
-
-## Run the Dashboard
-streamlit run app/dashboard.py
-
----
-
-## Technologies Used
-
-- Python
-- Streamlit
-- Pandas
-- ChromaDB
-- Ollama
-- Llama 3.1
-- Local Retrieval-Augmented Generation (RAG)
-
----
-
-## Project Purpose
-
-This project demonstrates how security analytics pipelines can be combined with local AI models to assist analysts during identity-based alert investigations.
-
-Focus areas include:
-
-- authentication anomaly detection
-- alert triage automation
-- explainable investigation workflows
-- AI-assisted security analysis
-
----
-
-## Author
-
-Rishal Khatri  
-Computer Science (Cybersecurity)  
-University of New Hampshire
+```mermaid
+graph TD
+    A[Security Logs] --> B[Log Normalization]
+    B --> C{Investigation Engine}
+    C --> D[Risk Scoring]
+    C --> E[Timeline Builder]
+    D & E --> F[Local RAG Assistant]
+    F --> G[Streamlit SOC Dashboard]
